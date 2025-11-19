@@ -126,7 +126,7 @@ select:focus {
 
 /* 副按鈕（霧奶茶色） */
 .btn.ghost {
-  background: #d7bf9d;
+  background: #bf9f73;
   box-shadow: 0 4px 15px rgba(150, 110, 70, 0.25);
 }
 .btn.ghost:hover {
