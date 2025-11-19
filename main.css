@@ -1,32 +1,31 @@
-/* === 背景：柔和漸層＋空氣感 === */
+/* === 背景：暖色系奶油漸層 === */
 body {
   font-family: "Noto Sans TC", sans-serif;
-  background: linear-gradient(180deg, #e7f3ff 0%, #f9fcff 100%);
+  background: linear-gradient(180deg, #fff3e4 0%, #ffeede 100%);
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   padding: 40px 16px;
   box-sizing: border-box;
-  color: #4a4a4a;
+  color: #5a4a42;
 }
 
 /* === 主卡片容器 === */
 .dog-app {
   width: 100%;
   max-width: 520px;
-  background: #ffffff;
+  background: #fff7f1;
   padding: 36px 32px 40px;
   border-radius: 26px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  box-sizing: border-box;
+  box-shadow: 0 10px 30px rgba(150, 100, 60, 0.15);
   animation: fadeIn 0.5s ease;
 }
 
-/* 淡入效果 */
+/* 淡入 */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }
-  to   { opacity: 1; transform: translateY(0); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 /* === Logo === */
@@ -39,7 +38,7 @@ body {
 /* === 標題 === */
 h1 {
   text-align: center;
-  color: #6c97bf;
+  color: #C47A3A; /* 取自 Logo 橘棕 */
   font-size: 28px;
   margin: 12px 0 4px;
   font-weight: 700;
@@ -50,7 +49,7 @@ h1 {
 .sub {
   text-align: center;
   font-size: 15px;
-  color: #8fa3b5;
+  color: #A46D3D;
   margin-bottom: 32px;
 }
 
@@ -61,56 +60,49 @@ h1 {
   gap: 22px;
 }
 
-/* === 每個欄位 === */
+/* === 欄位 === */
 .field {
   display: flex;
   flex-direction: column;
 }
 
-/* === 標籤文字 === */
 .field label {
   font-size: 15px;
   font-weight: 600;
   margin-bottom: 8px;
-  color: #65798a;
+  color: #8D654A;
   display: flex;
   align-items: center;
   gap: 4px;
 }
 
-/* === 輸入框與下拉選單 === */
+/* === 輸入框 === */
 input[type="text"],
 input[type="date"],
 select {
   padding: 14px 16px;
   border-radius: 14px;
-  border: 1.5px solid #d7e2eb;
-  background: #f9fafc;
+  border: 1.5px solid #e7d6c9;
+  background: #FDF4EC;
   font-size: 15px;
   transition: 0.25s ease;
 }
 
-/* === 輸入框聚焦效果 === */
 input:focus,
 select:focus {
-  border-color: #9bc1dd;
-  background: #ffffff;
-  box-shadow: 0 0 0 4px rgba(156, 192, 220, 0.26);
+  border-color: #D8A070;
+  background: #fff;
+  box-shadow: 0 0 0 4px rgba(230, 180, 130, 0.25);
   outline: none;
 }
 
-/* === 按鈕區 === */
+/* === 按鈕 === */
 .btn-row {
   display: flex;
   gap: 14px;
   margin-top: 10px;
 }
 
-.result-area {
-  margin-top: 40px;  
-}
-
-/* === 基礎按鈕樣式 === */
 .btn {
   flex: 1;
   padding: 15px 0;
@@ -123,28 +115,27 @@ select:focus {
   color: #fff;
 }
 
-/* === 奶咖主按鈕 === */
+/* 主按鈕（桃奶暖色） */
 .btn.primary {
-  background: #e7c7c6;
-  box-shadow: 0 4px 15px rgba(200, 173, 140, 0.35);
+  background: #E5B28A;
+  box-shadow: 0 4px 15px rgba(180, 120, 80, 0.25);
 }
 .btn.primary:hover {
-  background: #cda09d;
+  background: #D89A6A;
 }
 
-/* === 霧藍副按鈕 === */
+/* 副按鈕（霧奶茶色） */
 .btn.ghost {
-  background: #a9c8db;
-  box-shadow: 0 4px 15px rgba(140, 165, 180, 0.35);
+  background: #C7A27C;
+  box-shadow: 0 4px 15px rgba(150, 110, 70, 0.25);
 }
 .btn.ghost:hover {
-  background: #95b6ca;
+  background: #B58E64;
 }
 
-/* === 手機版 RWD === */
+/* 手機版 RWD */
 @media (max-width: 480px) {
   h1 { font-size: 24px; }
   .btn-row { flex-direction: column; }
   .dog-app { padding: 30px 24px; }
 }
-
