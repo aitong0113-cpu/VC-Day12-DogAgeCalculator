@@ -126,7 +126,7 @@ select:focus {
 
 /* 副按鈕（霧奶茶色） */
 .btn.ghost {
-  background: #C7A27C;
+  background: #d7bf9d;
   box-shadow: 0 4px 15px rgba(150, 110, 70, 0.25);
 }
 .btn.ghost:hover {
@@ -138,4 +138,9 @@ select:focus {
   h1 { font-size: 24px; }
   .btn-row { flex-direction: column; }
   .dog-app { padding: 30px 24px; }
+}
+
+
+.result-area {
+  margin-top: 40px; 
 }
