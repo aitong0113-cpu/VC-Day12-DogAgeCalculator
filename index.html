@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>狗狗年齡計算機</title>
+
+  <!-- 引入外部 CSS -->
+  <link rel="stylesheet" href="main.css">
+
+  <!-- 引入外部 JavaScript -->
+  <script src="main.js" defer></script>
+</head>
+<body>
+
+<div class="dog-app">
+
+  <div class="header">
+    <img src="/workspaces/VC-Day12-DogAgeCalculator/DogAge.png" alt="狗狗插畫" class="logo">
+    <h1>狗狗年齡計算機</h1>
+    <p class="sub">基於 AAHA 科學標準</p>
+  </div>
+
+  <form class="form">
+
+    <div class="field">
+      <label for="dog-name">🐾 狗狗名字</label>
+      <input id="dog-name" type="text" placeholder="例如：小白、Lucky...">
+    </div>
+
+    <div class="field">
+      <label for="birthday">🎂 出生日期</label>
+      <input id="birthday" type="date">
+    </div>
+
+    <div class="field">
+      <label for="size">✏️ 體型分類</label>
+      <select id="size">
+        <option value="small">小型犬（&lt; 9kg）</option>
+        <option value="medium">中型犬（9–23kg）</option>
+        <option value="large">大型犬（&gt; 23kg）</option>
+      </select>
+    </div>
+
+    <div class="btn-row">
+      <button type="button" id="calc" class="btn primary">💖 計算年齡</button>
+      <button type="reset" id="clear" class="btn ghost">🗑️ 清除資料</button>
+    </div>
+
+  </form>
+
+</div>
+
+</body>
+</html>
