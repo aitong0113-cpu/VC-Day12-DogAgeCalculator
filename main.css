@@ -107,7 +107,7 @@ select:focus {
 }
 
 .result-area {
-  margin-top: 24px;  /* 你可以改成 30 或 40 */
+  margin-top: 40px;  
 }
 
 /* === 基礎按鈕樣式 === */
